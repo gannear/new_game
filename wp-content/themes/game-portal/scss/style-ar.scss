@@ -1,0 +1,27 @@
+/*import files*/
+@import "utils/mixin";
+@import "utils/variables";
+@import "utils/extend";
+@import 'utils/breakpoint';
+
+body{direction: rtl;}
+
+.header .sidebar.pushy-left{
+	@include transform (translate3d(767px, 0, 0));
+}
+.pushy-open-left .pushy.pushy-left {
+    right: 0;
+    left: auto;
+    @include transform (translate3d(0, 0, 0));
+}
+.serach-wrapper{
+	.searchbox {
+		left: 0;
+		right: initial !important;
+		#searchform {
+			.search-submitbtn {
+				left: 0;
+			}
+		}
+	}
+}

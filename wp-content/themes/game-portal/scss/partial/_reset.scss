@@ -1,0 +1,39 @@
+/*body*/
+
+*{
+	padding: $padding;
+    margin: $margin; 
+}
+html{
+	padding: $padding;
+	margin: $margin;
+    font-size: $font-size;    
+    margin-top: 0 !important;
+}
+body{
+	padding: $padding;
+    margin: $margin; 
+	font-family: $primary-family;
+	font-weight: $font-weight + 100;
+
+	p,form,ul,li{
+        padding: $padding;
+        margin: $margin;
+        list-style: $list-style;
+    }
+
+	h1,h2,h3,h4,h5,h6{
+        padding: $padding;
+        margin: $margin; 
+    }
+    a{
+        color: $red;
+    }
+    a:hover, a:focus{
+        text-decoration: $red;
+        color: $black;
+    }
+    a:focus{
+        outline:none;
+    }
+}

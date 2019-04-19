@@ -1,0 +1,81 @@
+/*login*/
+#loginmodal{
+	button.close {
+	    margin: 1rem 1rem 1rem auto;
+	    color: $red;
+	    opacity: 1;
+	    font-size: $font-size + 13;
+	}
+	.modal-content{
+		background: url('http://mshop.php-dev.in/game_portal/wp-content/themes/game-portal/images/login.png') no-repeat center center;
+		background-size: cover;
+	}
+	#box-content{
+		padding: 0 110px 20px;
+		@include sm {
+			padding: 0 20px 20px;
+		}
+		h3{
+			font-size: $font-size + 10;
+			line-height: $line-height + 0.4;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: $font-size + (-1);
+			line-height: $line-height + (-0.5);
+		}
+		.loginform{
+			.input-group{
+				border: 1px solid #323232;
+				align-items: center;
+				margin: 1.333rem 0 0;
+    			@include radius (50px);
+    			.input-group-addon{
+    				font-size: $font-size + 5;
+    				margin-left: 30px;
+    			}
+    			.form-control:focus{
+    				box-shadow: none;
+    			}
+    			input[type=text], input[type=number],input[type=password] {
+    				border: none;
+    				background: none;
+    				padding: 1.333rem;
+    			}
+			}
+			.form-group{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 1.333rem 0 0;  
+				input{
+					width: 40px;
+				    height: 40px;
+				    border-radius: 50%;
+				    border: 1px solid #000;
+				    text-align: center;
+				    font-size: $font-size + 10;
+				}  
+			}
+			.loginmodal-submit{
+				@include radius (50px);
+			    font-size: $font-size + 3;
+			    background-color: $red;
+			    border: none;
+			    margin-top: 1.33rem;
+			    margin-bottom: 2rem;
+			}
+			.modal-error-info{
+				color: $red;
+			}
+			.link-txt{
+				color: $white;
+			    text-decoration: underline;
+			    text-align: center;
+			    display: block;
+			    cursor: pointer;
+			}
+		}
+	}
+}
+/*#login*/

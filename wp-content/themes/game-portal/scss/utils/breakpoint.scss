@@ -1,0 +1,56 @@
+/* Using SCSS variables to store breakpoints */
+$max-midphone: 575px;
+$max-phone: 767px;
+$min-tablet: 768px;
+$max-tablet: 991px;
+$min-desktop : 992px;
+$max-desktop : 1200px;
+$min-large : 1201px;
+$max-large : 1400px;
+
+/*media*/
+@mixin xs {
+   @media (max-width: #{$max-midphone}) {
+       @content;
+   }
+}
+@mixin sm {
+   @media (max-width: #{$max-phone}) {
+       @content;
+   }
+}
+@mixin md {
+   @media (max-width: #{$max-tablet}) {
+       @content;
+   }
+}
+@mixin lg {
+   @media (max-width: #{$max-desktop}) {
+       @content;
+   }
+}
+@mixin xl {
+   @media (max-width: #{$max-large}) {
+       @content;
+   }
+}
+/*// Medium devices*/
+@mixin tablet {
+   @media only screen and (min-width: #{$min-tablet}) and (max-width: #{$max-tablet}){
+       @content;
+   }
+}
+
+/*// desktop devices*/
+@mixin desktop {
+   @media only screen and (min-width: #{$min-desktop}) and (max-width: #{$max-desktop}){
+       @content;
+   }
+}
+
+/*// large devices*/
+@mixin large {
+   @media only screen and (min-width: #{$min-large}) and (max-width: #{$max-large}){
+       @content;
+   }
+}

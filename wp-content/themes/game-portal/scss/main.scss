@@ -1,0 +1,21 @@
+/*import files*/
+@import "utils/mixin";
+@import "utils/variables";
+@import "utils/extend";
+@import 'utils/breakpoint';
+
+@import "../scss/vendor/animate.css";
+@import "../scss/vendor/owl.carousel.css";
+@import "../css/vendor/pushy.css";
+
+@import 'partial/reset';
+@import 'partial/header';
+@import 'partial/footer';
+@import 'partial/rating';
+@import 'partial/login';
+@import 'partial/search';
+
+/*desktop*/
+@import 'pages/home';
+@import 'pages/category';
+@import 'pages/gamelist';

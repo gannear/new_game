@@ -1,0 +1,24 @@
+/*search*/
+.content-block{
+	.screen-reader-text {
+	    display: none;
+	}
+	.pagination{
+		justify-content: center;
+		.nav-links{
+			.page-numbers{
+				padding: 8px 12px;
+				border: 1px solid $red;
+				&:hover{
+					background: $red;
+					color: $white;
+				}
+			}
+			.current{
+				background: $red;
+				color: $white;
+			}
+		}
+	}
+}
+/*#search*/

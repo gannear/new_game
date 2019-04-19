@@ -1,0 +1,83 @@
+/*home slider*/
+#home-slider, #home-slider-ar {
+	.owl-dots{
+		position: absolute;
+	    bottom: 15px;
+	    right: 0;
+	    left: 0;
+	    @include sm{
+	    	bottom: 0;
+	    }
+	}
+	.owl-dots .owl-dot span {
+		background: $grey;
+		@include sm{
+			@include width (6px, 6px);
+			margin: 3px 2px;
+		}
+	}
+	.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+	    background: $red;
+	}
+}
+/*#home slider*/
+
+/*Premium Games*/
+.main-title{
+	h2{
+		font-size: $font-size + 15;
+		font-weight: $font-weight + 100;
+		line-height: $line-height + 0.8;
+		@include sm{
+			font-size: $font-size + 10;
+		}
+	}
+	a{
+		font-size: $font-size + 9;
+		font-weight: $font-weight + 100;
+		text-transform: uppercase;
+		line-height: $line-height + (-1);
+		@include sm{
+			font-size: $font-size;
+		}
+	}
+}
+.game-box{
+	@include shadowarea (0 0 2px 0 rgba(0,0,0,.3));
+	&:hover{
+		@include shadowarea (0 5px 5px rgba(0, 0, 0, 0.1));
+	}
+	border-radius: 8px;
+	.game-media{
+		img{
+			width: 100%;
+		}
+	}
+	.game-box-detail{
+		-ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+	    padding: 1.25rem;
+		.game-title{
+			h4{
+				font-size: $font-size + 5;
+				font-weight: $font-weight;
+				line-height: $line-height;
+				a{
+					color: $black;
+				}
+			}
+		}
+		.game-text{
+			font-size: $font-size;
+			font-weight: $font-weight;
+			line-height: $line-height + (-0.4);
+			.category{
+				color: $red;
+			}
+			.downloads{
+				color: $grey1;
+			}
+		}
+	}
+}
+/*#Premium Games*/

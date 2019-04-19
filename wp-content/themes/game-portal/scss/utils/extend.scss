@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixin";
+@import "breakpoint";
+
+/*container*/
+.container { @media (min-width:1920px) {
+    max-width: 1640px; width: 100%; }
+}
+
+/*custom col*/
+.col-xs-15,.col-sm-15,.col-md-15,.col-lg-15 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-15 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
